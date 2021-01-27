@@ -8,8 +8,6 @@ Készítsetek egy Webshopot Angular keretrendszer segítségével.
 - `https://github.com/cherryApp/str-angular-project-001`
 - Hívja meg a többieket együttműködőknek a github felületén.
 - Mindenki klónozza le magának a forkolt repo -t.
-- Egyenlő arányban osszátok el a feladatokat.
-- Minden komponensen csak egy ember dolgozzon.
 - Üzembehelyezés a szokásos: 
 - `cd str-angular-project-001`
 - `npm i`
@@ -19,11 +17,15 @@ Készítsetek egy Webshopot Angular keretrendszer segítségével.
 ## Csapatmunka
 - Beszéljétek meg az oldal témáját (sícuccok, főzés, könyvek, filmek, stb...).
 - Keressétek meg a hozzávalókat: képek, termék adatok.
+- Egyenlő arányban osszátok el a feladatokat.
+- Minden komponensen csak egy ember dolgozzon.
 - Beszéljétek meg a stílust.
 - Osszátok ki, ki melyik feladatot végzi el: el kell készíteni az osztályokat, 
 majd három komponenst kell készíteni. Ez 4 jól elkülönülő faladat, időrendben.  
-- Ha megvannak minden hozzávaló, akkor össze kell állítani az oldalt a szükséges 
+- Ha megvan minden hozzávaló, akkor össze kell állítani az oldalt a szükséges 
 komponensekből. Ezt érdemes együtt csinálni.
+- Miután minden megfelelően működik, csak akkor fogjatok hozzá a stílusok 
+testreszabásának. Amit csak lehet, a komponensek saját stíluslapjába írjatok.
 - A Git közös használatáról konzultálunk a projekt indító megbeszélésen.
 
 ## Alap osztályok
