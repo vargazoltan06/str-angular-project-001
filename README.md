@@ -15,8 +15,8 @@ Készítsetek egy Webshopot Angular keretrendszer segítségével.
 - `npm start`
 
 ## Csapatmunka
-- Beszéljétek meg az oldal témáját (sícuccok, főzés, könyvek, filmek, stb...).
-- Keressétek meg a hozzávalókat: képek, termék adatok.
+- Válasszátok ki az oldal témáját (sícuccok, főzés, könyvek, filmek, stb...).
+- Keressétek meg a hozzávalókat: képek, egyéb adatok.
 - Egyenlő arányban osszátok el a feladatokat.
 - Minden komponensen csak egy ember dolgozzon.
 - Beszéljétek meg a stílust.
