@@ -44,7 +44,7 @@ Amint látjátok, a fő komponenseket már elkészítettem és a menüt is beál
 - Ez a főoldala a webshopnak.
 - Jelenjen meg egy kiemelt termék sor az oldal tetején.  
 > 5 kiemelt terméket tartalmazzon, azok közül jelenjenek meg, amelyek featured tulajdonsága true.
-> Jelenjen meg egy akciós termék sor a kiemelt termékek alatt, ide bármilyen random termék 
+- Jelenjen meg egy akciós termék sor a kiemelt termékek alatt, ide bármilyen random termék 
 kerülhet, szintén 5 darab legyen.
 
 ## Category oldalak
