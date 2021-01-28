@@ -105,5 +105,9 @@ ebben a mappában létrehozol egy `img` almappát a képeknek, akkor egy képet 
 érsz el: `/assets/img/logo.png`. A képeket érdemes egyforma méretűre vágni, hogy 
 ne kelljen vele annyit dolgozni a stílusnál.
 
+## Extra funkciók
+- A lista nézetben lehessen a termékeket szűrni nem csak név, hanem más paraméterek alapján is.
+- A lista nézetben lehessen rendezni is a termék kártyákat, mondjuk ár, név, akció, kiemelt alapján.
+
 ## Sok sikert!
 
