@@ -1,0 +1,58 @@
+<p>book-list works!</p>
+
+
+<div class="row">
+    <div class="col-8">
+        <h3>Books</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!--
+            FELADAT!
+            1. A következő 5 fejléc cellát állítsd be az
+              onColumnSelect eseménykezelőt kattintás esetén.
+            2. Minden metódusnak string -ként add át az oszlophoz
+              tartozó kulcsot, pld: 'id', vagy 'email'.
+           -->
+                    <th>#</th>
+                    <th>catId</th>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>image</th>
+                    <th>price</th>
+                    <th>stock</th>
+                    <th>featured</th>
+                    <th>active</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+          FELADAT!
+          Egészítsd ki ezzel az *ngFor attribútum értékét
+          <!-- (függőleges vonallal kezdőik, az is kell): -->
+                <!-- | filter:phraseString:'name' | sorter:columnKey -->
+
+                <tr *ngFor="let book of books">
+                    <td>{{ book.id }}"</td>
+                    <td>{{ book.catId }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.description }}</td>
+                    <td><img class="cover" src='{{ book.image }}' alt="book"></td>
+                    <td>{{ book.price }}</td>
+                    <td>{{ book.stock }}</td>
+                    <td>{{ book.featured }}</td>
+                    <td>{{ book.active }}</td>
+
+                    <td>
+                        <button (click)="onSelectBook(book)" class="btn btn-info">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-4 pt-5">
+        <app-book-detail [book]="currentBook"></app-book-detail>
+    </div>
+</div>
