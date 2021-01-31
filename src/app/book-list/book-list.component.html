@@ -1,0 +1,12 @@
+<div class="cardfolder col-12">
+    <div class="card col-md-4 col-xl-2 mx-1% mt-auto" style="width: auto;"
+        *ngFor="let book of books | filter:phraseString:'name'">
+        <img class="card-img-top" src='{{ book.image }}' alt="book">
+        <div class="card-body">
+            <h5 class="card-title text-center">#{{ book.id }}. {{ book.name }}</h5>
+            <p class="card-text">{{ book.description }}</p>
+            <p class="card-text mt-auto">Készlet: {{ book.stock }} db.</p>
+            <h5 class="card-text text-center">Ára: {{ book.price }} €</h5>
+        </div>
+    </div>
+</div>
