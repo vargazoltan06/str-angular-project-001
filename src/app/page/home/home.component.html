@@ -1,10 +1,5 @@
 <div>
     <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
-        <!--
-          FELADAT!
-          Állítsd be az onChangePhrase($event) metódust az input elem
-          keyup eseményére.
-         -->
         <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
@@ -14,7 +9,5 @@
 
 
 <div class="w-100 container-fluid mx-auto card-deck d-flex flex-row">
-
     <app-book-list [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>
-
 </div>
