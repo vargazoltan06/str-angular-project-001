@@ -1,58 +1,17 @@
-<p>book-list works!</p>
-
-
-<div class="row">
-    <div class="col-8">
-        <h3>Books</h3>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <!--
-            FELADAT!
-            1. A következő 5 fejléc cellát állítsd be az
-              onColumnSelect eseménykezelőt kattintás esetén.
-            2. Minden metódusnak string -ként add át az oszlophoz
-              tartozó kulcsot, pld: 'id', vagy 'email'.
-           -->
-                    <th>#</th>
-                    <th>catId</th>
-                    <th>name</th>
-                    <th>description</th>
-                    <th>image</th>
-                    <th>price</th>
-                    <th>stock</th>
-                    <th>featured</th>
-                    <th>active</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!--
-          FELADAT!
-          Egészítsd ki ezzel az *ngFor attribútum értékét
-          <!-- (függőleges vonallal kezdőik, az is kell): -->
-                <!-- | filter:phraseString:'name' | sorter:columnKey -->
-
-                <tr *ngFor="let book of books">
-                    <td>{{ book.id }}"</td>
-                    <td>{{ book.catId }}</td>
-                    <td>{{ book.name }}</td>
-                    <td>{{ book.description }}</td>
-                    <td><img class="cover" src='{{ book.image }}' alt="book"></td>
-                    <td>{{ book.price }}</td>
-                    <td>{{ book.stock }}</td>
-                    <td>{{ book.featured }}</td>
-                    <td>{{ book.active }}</td>
-
-                    <td>
-                        <button (click)="onSelectBook(book)" class="btn btn-info">
-                            <i class="fa fa-eye"></i>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<div class="cardfolder col-12">
+    <div class="card col-md-4 col-xl-2 mx-1% mt-auto" style="width: auto;" *ngFor="let book of books">
+        <img class="card-img-top" src='{{ book.image }}' alt="book">
+        <div class="card-body">
+            <h5 class="card-title text-center">#{{ book.id }}. {{ book.name }}</h5>
+            <p class="card-text">{{ book.description }}</p>
+            <p class="card-text mt-auto">Készlet: {{ book.stock }} db.</p>
+            <h5 class="card-text text-center">Ára: {{ book.price }} €</h5>
+        </div>
     </div>
+
+</div>
+<!-- <div>
     <div class="col-4 pt-5">
         <app-book-detail [book]="currentBook"></app-book-detail>
     </div>
-</div>
+</div> -->

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from 'src/app/model/book';
+import { BooksService } from 'src/app/service/books.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
 
+  booksList: Book[] = this.booksService.list;
 
-  constructor() { }
+  constructor(
+    private booksService: BooksService,
+  ) { };
+
 
   ngOnInit(): void {
   }
