@@ -9,7 +9,7 @@ import { Book } from '../model/book';
 export class BookListComponent implements OnInit {
 
 
-
+  @Input() phraseString: string = '';
 
 
   @Input() books: Book[] = [];

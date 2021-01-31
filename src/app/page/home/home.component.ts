@@ -9,6 +9,8 @@ import { BooksService } from 'src/app/service/books.service';
 })
 export class HomeComponent implements OnInit {
 
+  phrase: string = '';
+
 
   booksList: Book[] = this.booksService.list;
 
@@ -16,8 +18,13 @@ export class HomeComponent implements OnInit {
     private booksService: BooksService,
   ) { };
 
+  onChangePhrase(event: Event): void {
+    this.phrase = (event.target as HTMLInputElement).value;
+  }
 
   ngOnInit(): void {
   }
+
+
 
 }
