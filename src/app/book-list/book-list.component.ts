@@ -10,7 +10,7 @@ export class BookListComponent implements OnInit {
 
 
   @Input() phraseString: string = '';
-
+  @Input() propValue: string = '';
 
   @Input() books: Book[] = [];
   currentBook: Book = new Book();
