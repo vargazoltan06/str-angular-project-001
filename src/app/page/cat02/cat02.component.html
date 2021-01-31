@@ -1,1 +1,14 @@
-<p>cat02 works!</p>
+<div>
+    <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+        <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+
+
+
+
+<div class="w-100 container-fluid mx-auto card-deck d-flex flex-row">
+    <app-book-list [propValue]='2' [phraseString]='phrase' class="col-12" [books]="booksList">
+    </app-book-list>
+</div>
