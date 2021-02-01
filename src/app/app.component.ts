@@ -10,7 +10,7 @@ import { BooksService } from './service/books.service';
 export class AppComponent {
   title = 'str-angular-project001';
 
-  booksLista: Book[] = this.booksService.list;
+  booksList: Book[] = this.booksService.list;
 
   constructor(
     private booksService: BooksService,
