@@ -11,6 +11,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CategoryPipe } from './pipes/category.pipe';
+import { ProductPagerComponent } from './product-pager/product-pager.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CategoryPipe } from './pipes/category.pipe';
     BookDetailComponent,
     BookListComponent,
     FilterPipe,
-    CategoryPipe
+    CategoryPipe,
+    ProductPagerComponent
   ],
   imports: [
     BrowserModule,

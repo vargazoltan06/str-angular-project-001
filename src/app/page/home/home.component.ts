@@ -11,8 +11,9 @@ export class HomeComponent implements OnInit {
 
   phrase: string = '';
 
-
   booksList: Book[] = this.booksService.list;
+
+  featuredBooks: Book[] = this.booksService.getFeatured(true).slice(0, 5);
 
   constructor(
     private booksService: BooksService,

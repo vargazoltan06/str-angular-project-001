@@ -507,5 +507,39 @@ export class BooksService {
     featured: false,
     active: true
   }]
+
+
   constructor() { }
+
+
+  getFeatured(randomized?: boolean): Book[] {
+    const featured = this.list.filter(item => item.featured);
+    return randomized ? this.randomize(featured) : featured;
+  }
+
+  getFeaturedCartoon(randomized?: boolean): Book[] {
+    const featuredCartoon = this.list.filter(item => item.featured && item.catId === 1);
+    return randomized ? this.randomize(featuredCartoon) : featuredCartoon;
+  }
+
+  getFeaturedComputing(randomized?: boolean): Book[] {
+    const featuredComputing = this.list.filter(item => item.featured && item.catId === 2);
+    return randomized ? this.randomize(featuredComputing) : featuredComputing;
+  }
+
+
+  getActive(randomized?: boolean): Book[] {
+    const active = this.list.filter(item => item.active);
+    return randomized ? this.randomize(active) : active;
+  }
+
+
+  randomize(sourceArray: any[]): any[] {
+    return sourceArray.sort(() => Math.random() - 0.5);
+  }
+
+
+
+
+
 }

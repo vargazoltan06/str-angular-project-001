@@ -14,6 +14,8 @@ export class Cat02Component implements OnInit {
 
   booksList: Book[] = this.booksService.list;
 
+  featuredComputing: Book[] = this.booksService.getFeaturedComputing(true).slice(0, 5);
+
   constructor(
     private booksService: BooksService,
   ) { };
