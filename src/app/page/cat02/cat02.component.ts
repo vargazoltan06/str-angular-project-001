@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from 'src/app/model/book';
+import { BooksService } from 'src/app/service/books.service';
 
 @Component({
   selector: 'app-cat02',
@@ -7,7 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cat02Component implements OnInit {
 
-  constructor() { }
+  propValue: string = '2';
+  phrase: string = '';
+
+  booksList: Book[] = this.booksService.list;
+
+  cat2Books: Book[] = this.booksService.getCategory(2, true).slice(0, 5);
+
+
+  constructor(
+    private booksService: BooksService,
+  ) { };
+
+  onChangePhrase(event: Event): void {
+    this.phrase = (event.target as HTMLInputElement).value;
+  }
 
   ngOnInit(): void {
   }
