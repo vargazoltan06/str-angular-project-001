@@ -1,4 +1,4 @@
-<!-- <p>book-detail works!</p>
+<!-- <p>book-detail works!</p> -->
 
 
 <!-- <p>id: {{ book.id }}</p>
@@ -9,4 +9,17 @@
 <p>price: {{ book.price }}</p>
 <p>stock: {{ book.stock }}</p>
 <p>featured: {{ book.featured }}</p>
-<p>active: {{ book.active }}</p> --> -->
+<p>active: {{ book.active }}</p> -->
+
+<div class="card d-flex h-100" style="width: 18rem;">
+    <img src="{{ book.image }}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{book.name}}</h5>
+        <p class="card-text">{{ book.description }}</p>
+        <p class="card-text">stock: <b>{{ book.stock }}</b> pcs</p>
+        <p class="card-text">active: <b>{{ book.active }}</b></p>
+        <p class="card-text">featured: <b>{{ book.featured }}</b></p>
+        <p class="card-text">catId: <b>{{ book.catId }}</b></p>
+        <p class="card-text">price: <b>{{ book.price }}</b>-</p>
+    </div>
+</div>

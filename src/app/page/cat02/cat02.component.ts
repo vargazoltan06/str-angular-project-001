@@ -14,6 +14,9 @@ export class Cat02Component implements OnInit {
 
   booksList: Book[] = this.booksService.list;
 
+  cat2Books: Book[] = this.booksService.getCategory(2, true).slice(0, 5);
+
+
   constructor(
     private booksService: BooksService,
   ) { };

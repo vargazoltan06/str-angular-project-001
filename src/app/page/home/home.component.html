@@ -1,4 +1,4 @@
-<h1>Kínálatunk</h1>
+<!-- <h1>Kínálatunk</h1>
 <div>
     <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
         <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -10,4 +10,10 @@
 
 <div class="w-100 container-fluid mx-auto card-deck d-flex flex-row">
     <app-book-list [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>
-</div>
+</div> -->
+
+<h3>Kiemelt termékek</h3>
+<app-book-pager [books]="featuredBooks"></app-book-pager>
+
+<h3>Akciós termékek</h3>
+<app-book-pager [books]="activeBooks"></app-book-pager>
