@@ -101,7 +101,7 @@ export class BooksService {
     catId: 1,
     name: "The Walking Dead - Élőhalottak 27. - A Suttogó háború",
     description: "Rettenetes járvány söpört végig a bolygón. Visszatértek a holtak, és az élőkre vadásznak.",
-    image: "../../assets/img/Thor Mennydörgés istene 2.jpg",
+    image: "../../assets/img/The Walking Dead - Élőhalottak 27.jpg",
     price: 6.88,
     stock: 3,
     featured: true,
