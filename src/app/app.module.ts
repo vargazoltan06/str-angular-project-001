@@ -7,6 +7,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BookListComponent } from './book-list/book-list.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { CategoryPipe } from './pipes/category.pipe';
+import { BookPagerComponent } from './book-pager/book-pager.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { HomeComponent } from './page/home/home.component';
     NavigationComponent,
     Cat01Component,
     Cat02Component,
-    HomeComponent
+    HomeComponent,
+    BookDetailComponent,
+    BookListComponent,
+    FilterPipe,
+    CategoryPipe,
+    BookPagerComponent
   ],
   imports: [
     BrowserModule,
