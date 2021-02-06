@@ -1,6 +1,28 @@
 {
   "books": [
     {
+      "id": 1,
+      "catId": 1,
+      "name": "Star Wars: Lázadók és zsiványok ",
+      "description": "Kutaszdroidok ezrei rajzottak szét a galaxisban, hogy a lázadók nyomára leljenek, ezért a Felkelők Szövetségének hősei új küldetésekre indulnak, hogy eltereljék a figyelmet szorongatott helyzetben lévő bajtársaikról.",
+      "image": "../../assets/img/Star wars lázadók.jpg",
+      "price": 0.04,
+      "stock": 14,
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": 2,
+      "catId": 1,
+      "name": "Star Wars: Thrawn",
+      "description": "Vajon hogyan vált Thrawn főadmirális a messzi-messzi galaxis egyik legfélelmetesebb stratégájává? A fiatal Thrawn hadnagy a legkiemelkedőbb eredménnyel végzett a Birodalmi Akadémián",
+      "image": "../../assets/img/Star Wars Thrawn.jpg",
+      "price": 1.60,
+      "stock": 15,
+      "featured": true,
+      "active": true
+    },
+    {
       "id": 3,
       "catId": 2,
       "name": "Digitális hajsza",
