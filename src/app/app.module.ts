@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +14,13 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CategoryPipe } from './pipes/category.pipe';
+<<<<<<< HEAD
 import { ProductPagerComponent } from './product-pager/product-pager.component';
+=======
+import { BookPagerComponent } from './book-pager/book-pager.component';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './data-editor/data-editor.component';
+>>>>>>> origin/dev
 
 @NgModule({
   declarations: [
@@ -24,11 +33,19 @@ import { ProductPagerComponent } from './product-pager/product-pager.component';
     BookListComponent,
     FilterPipe,
     CategoryPipe,
+<<<<<<< HEAD
     ProductPagerComponent
+=======
+    BookPagerComponent,
+    AdminComponent,
+    DataEditorComponent
+>>>>>>> origin/dev
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

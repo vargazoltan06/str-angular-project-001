@@ -14,11 +14,8 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </div>
+<h3>A kategória kiemelt termékei</h3>
+<app-book-pager [books]="cat1Books"></app-book-pager>
 
 
-
-
-<div class="w-100 container-fluid mx-auto card-deck d-flex flex-row">
-    <app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList">
-    </app-book-list>
-</div>
+<app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>

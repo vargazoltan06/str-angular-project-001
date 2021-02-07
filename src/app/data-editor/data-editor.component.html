@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th *ngFor="let col of tableCols">{{ col.text }}</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let book of list | async">
+                        <td *ngFor="let col of tableCols">
+                            <input *ngIf="col.editable" [(ngModel)]="book[col.key]" type="text" class="form-control">
+                            <span *ngIf="!col.editable">{{ book[col.key] }}</span>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button (click)="onUpdate(book)" class="btn btn-primary">
+                                    <i class="fa fa-refresh"></i>
+                                </button>
+                                <button (click)="onDelete(book)" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
