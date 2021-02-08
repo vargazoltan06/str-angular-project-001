@@ -14,13 +14,9 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CategoryPipe } from './pipes/category.pipe';
-<<<<<<< HEAD
-import { ProductPagerComponent } from './product-pager/product-pager.component';
-=======
 import { BookPagerComponent } from './book-pager/book-pager.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './data-editor/data-editor.component';
->>>>>>> origin/dev
 
 @NgModule({
   declarations: [
@@ -33,13 +29,9 @@ import { DataEditorComponent } from './data-editor/data-editor.component';
     BookListComponent,
     FilterPipe,
     CategoryPipe,
-<<<<<<< HEAD
-    ProductPagerComponent
-=======
     BookPagerComponent,
     AdminComponent,
     DataEditorComponent
->>>>>>> origin/dev
   ],
   imports: [
     BrowserModule,

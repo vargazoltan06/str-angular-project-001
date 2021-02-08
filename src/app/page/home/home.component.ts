@@ -11,9 +11,6 @@ export class HomeComponent implements OnInit {
 
   // phrase: string = '';
 
-<<<<<<< HEAD
-  booksList: Book[] = this.booksService.list;
-=======
 
   // booksList: Book[] = this.booksService.list;
 
@@ -21,7 +18,6 @@ export class HomeComponent implements OnInit {
 
   activeBooks: Book[] = this.booksService.getActive(true).slice(0, 5);
 
->>>>>>> origin/dev
 
   featuredBooks: Book[] = this.booksService.getFeatured(true).slice(0, 5);
 

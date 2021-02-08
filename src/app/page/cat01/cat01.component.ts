@@ -14,12 +14,7 @@ export class Cat01Component implements OnInit {
 
   booksList: Book[] = this.booksService.list;
 
-<<<<<<< HEAD
-
-  featuredCartoon: Book[] = this.booksService.getFeaturedCartoon(true).slice(0, 5);
-=======
   cat1Books: Book[] = this.booksService.getCategory(1, true).slice(0, 5);
->>>>>>> origin/dev
 
 
   constructor(

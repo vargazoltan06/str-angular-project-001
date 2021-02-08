@@ -10,11 +10,7 @@ import { BooksService } from './service/books.service';
 export class AppComponent {
   title = 'str-angular-project001';
 
-<<<<<<< HEAD
-  booksList: Book[] = this.booksService.list;
-=======
   // booksList: Book[] = this.booksService.list;
->>>>>>> origin/dev
 
   // constructor(
   //   private booksService: BooksService,
