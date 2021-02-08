@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 <h2 class=" offer text-center py-5 mb-0">Aktuális ajánlat - kiemelt könyvek</h2>
 
 <div class="offer w-100 container-fluid mx-auto card-deck d-flex flex-row">
@@ -12,15 +12,7 @@
 
 
 <h1 class="text-center py-3">Kiemelt termékek</h1>
-<!-- <app-book-pager [books]="featuredBooks"></app-book-pager> -->
-<div class="py-3 d-flex justify-content-center">
-    <app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | slicer:5">
-    </app-book-pager>
-</div>
+<app-book-pager [books]="featuredBooks"></app-book-pager>
 
 <h1 class="text-center py-3">Akciós termékek</h1>
-
-<div class="py-3 d-flex justify-content-center">
-    <app-book-pager [books]="booksList$ | async | randomiser | active:true | slicer:5"></app-book-pager>
-</div>
-
+<app-book-pager [books]="activeBooks"></app-book-pager>

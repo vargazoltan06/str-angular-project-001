@@ -6,24 +6,19 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CategoryPipe implements PipeTransform {
 
 
-  // transform(value: any[], propValue: string, key: string = ''): any[] {
+  transform(value: any[], propValue: string, key: string = ''): any[] {
 
-  //   if (!Array.isArray(value) || !propValue || !key) {
-  //     return value;
-  //   }
+    if (!Array.isArray(value) || !propValue || !key) {
+      return value;
+    }
 
-  //   propValue = ('' + propValue).toLowerCase();
-  //   return value.filter(item => {
-  //     const stringItem: string = '' + item[key];
-  //     return item[key] === propValue;
-  //   });
+    propValue = ('' + propValue).toLowerCase();
+    return value.filter(item => {
+      const stringItem: string = '' + item[key];
+      return item[key] === propValue;
+    });
 
-  // }
-
-  transform(value: Array<any>, cat: number): Array<any> {
-    return value.filter(item => item['catId'] === cat);
   }
-
 }
 
 

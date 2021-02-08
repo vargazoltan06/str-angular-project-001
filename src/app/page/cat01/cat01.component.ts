@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Book } from 'src/app/model/book';
 import { BooksService } from 'src/app/service/books.service';
 
@@ -13,10 +12,9 @@ export class Cat01Component implements OnInit {
   propValue: string = '1';
   phrase: string = '';
 
-  //booksList: Book[] = this.booksService.list;
-  booksList$: Observable<Book[]> = this.booksService.getAll();
+  booksList: Book[] = this.booksService.list;
 
-  //cat1Books: Book[] = this.booksService.getCategory(1, true).slice(0, 5);
+  cat1Books: Book[] = this.booksService.getCategory(1, true).slice(0, 5);
 
 
   constructor(

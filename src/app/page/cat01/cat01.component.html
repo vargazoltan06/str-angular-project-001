@@ -14,13 +14,8 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </div>
-<h3 class="text-center py-3">A kategória kiemelt termékei</h3>
-<!-- <app-book-pager [books]="cat1Books"></app-book-pager> -->
-<div class="py-3 d-flex justify-content-center">
-    <app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | category:1 | slicer:5">
-    </app-book-pager>
-</div>
+<h3>A kategória kiemelt termékei</h3>
+<app-book-pager [books]="cat1Books"></app-book-pager>
 
 
-<!-- <app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list> -->
-<app-book-pager [books]="booksList$ | async | randomiser | category:1"></app-book-pager>
+<app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>
