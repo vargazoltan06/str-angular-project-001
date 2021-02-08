@@ -17,10 +17,6 @@ import { CategoryPipe } from './pipes/category.pipe';
 import { BookPagerComponent } from './book-pager/book-pager.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './data-editor/data-editor.component';
-import { RandomiserPipe } from './pipes/randomiser.pipe';
-import { FeaturedPipe } from './pipes/featured.pipe';
-import { ActivePipe } from './pipes/active.pipe';
-import { SlicerPipe } from './pipes/slicer.pipe';
 
 @NgModule({
   declarations: [
@@ -35,11 +31,7 @@ import { SlicerPipe } from './pipes/slicer.pipe';
     CategoryPipe,
     BookPagerComponent,
     AdminComponent,
-    DataEditorComponent,
-    RandomiserPipe,
-    FeaturedPipe,
-    ActivePipe,
-    SlicerPipe
+    DataEditorComponent
   ],
   imports: [
     BrowserModule,
