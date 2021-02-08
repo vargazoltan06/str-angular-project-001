@@ -1,1 +1,12 @@
-<p>cat01 works!</p>
+<h1>Képregények</h1>
+<div>
+    <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+        <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+<h3>A kategória kiemelt termékei</h3>
+<app-book-pager [books]="cat1Books"></app-book-pager>
+
+
+<app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>

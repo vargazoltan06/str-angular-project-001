@@ -1,0 +1,22 @@
+<!-- <p>book-detail works!</p> -->
+
+
+<!-- <p>id: {{ book.id }}</p>
+<p>catId: {{ book.catId }}</p>
+<p>name: {{ book.name }}</p>
+<p>description: {{ book.description }}</p>
+<p>image: {{ book.image }}</p>
+<p>price: {{ book.price }}</p>
+<p>stock: {{ book.stock }}</p>
+<p>featured: {{ book.featured }}</p>
+<p>active: {{ book.active }}</p> -->
+
+<div class="card d-flex h-100 p-2 ml-4 border-0 bg-secondary text-light" style="width: 17rem;">
+    <img src="{{ book.image }}" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{book.name}}</h5>
+        <p class="card-text">{{ book.description }}</p>
+        <p class="card-text mt-auto">stock: <b>{{ book.stock }}</b> pcs</p>
+        <p class="card-text">price: <b>{{ book.price }}</b>€</p>
+    </div>
+</div>
