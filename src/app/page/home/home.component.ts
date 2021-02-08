@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Book } from 'src/app/model/book';
 import { BooksService } from 'src/app/service/books.service';
 
@@ -13,11 +14,14 @@ export class HomeComponent implements OnInit {
 
 
   // booksList: Book[] = this.booksService.list;
+  booksList$: Observable<Book[]> = this.booksService.getAll();
+
+  //featuredBooks: Book[] = this.booksService.getFeatured(true).slice(0, 5);
+
+  //activeBooks: Book[] = this.booksService.getActive(true).slice(0, 5);
+
 
   featuredBooks: Book[] = this.booksService.getFeatured(true).slice(0, 5);
-
-  activeBooks: Book[] = this.booksService.getActive(true).slice(0, 5);
-
 
   constructor(
     private booksService: BooksService,

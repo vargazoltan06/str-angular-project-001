@@ -1,12 +1,26 @@
-<h1>Képregények</h1>
+<h2 class="offer text-center py-5 mb-0">Aktuális képregény ajánlat</h2>
+
+<div class="offer w-100 container-fluid mx-auto card-deck d-flex flex-row">
+    <app-product-pager [books]="featuredCartoon" class="col-12"></app-product-pager>
+</div>
+
+
+<h1 class="mt-5">Képregények kínálatunk</h1>
+
+
 <div>
     <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
         <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </div>
-<h3>A kategória kiemelt termékei</h3>
-<app-book-pager [books]="cat1Books"></app-book-pager>
+<h3 class="text-center py-3">A kategória kiemelt termékei</h3>
+<!-- <app-book-pager [books]="cat1Books"></app-book-pager> -->
+<div class="py-3 d-flex justify-content-center">
+    <app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | category:1 | slicer:5">
+    </app-book-pager>
+</div>
 
 
-<app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>
+<!-- <app-book-list [propValue]='1' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list> -->
+<app-book-pager [books]="booksList$ | async | randomiser | category:1"></app-book-pager>
