@@ -6,7 +6,10 @@
     </form>
 </div>
 <h3>A kategória kiemelt termékei</h3>
-<app-book-pager [books]="cat2Books"></app-book-pager>
+<!-- <app-book-pager [books]="cat2Books"></app-book-pager> -->
+<app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | category:2 | slicer:5">
+</app-book-pager>
 
 
-<app-book-list [propValue]='2' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list>
+<!-- <app-book-list [propValue]='2' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list> -->
+<app-book-pager [books]="booksList$ | async | randomiser | category:2"></app-book-pager>
