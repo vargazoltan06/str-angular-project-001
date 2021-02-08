@@ -13,7 +13,13 @@
 </div> -->
 
 <h1 class="text-center py-3">Kiemelt termékek</h1>
-<app-book-pager [books]="featuredBooks"></app-book-pager>
+<!-- <app-book-pager [books]="featuredBooks"></app-book-pager> -->
+<div class="py-3 d-flex justify-content-center">
+    <app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | slicer:5">
+    </app-book-pager>
+</div>
 
 <h1 class="text-center py-3">Akciós termékek</h1>
-<app-book-pager [books]="activeBooks"></app-book-pager>
+<div class="py-3 d-flex justify-content-center">
+    <app-book-pager [books]="booksList$ | async | randomiser | active:true | slicer:5"></app-book-pager>
+</div>
