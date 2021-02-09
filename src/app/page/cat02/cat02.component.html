@@ -1,4 +1,11 @@
-<h1>Számítástechnika szakkönyvek</h1>
+<h2 class="offer text-center py-5 mb-0">Aktuális szakkönyv ajánlat - számítástechnika</h2>
+
+
+
+
+<h1 class="my-5">Számítástechnika szakkönyv kínálatunk</h1>
+
+
 <div>
     <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
         <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -11,6 +18,7 @@
     <app-book-pager [books]="booksList$ | async | randomiser | featured:true | active:true | category:2 | slicer:5">
     </app-book-pager>
 </div>
+
 
 
 <!-- <app-book-list [propValue]='2' [phraseString]='phrase' class="col-12" [books]="booksList"></app-book-list> -->
