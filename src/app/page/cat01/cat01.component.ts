@@ -13,11 +13,7 @@ export class Cat01Component implements OnInit {
   propValue: string = '1';
   phrase: string = '';
 
-  //booksList: Book[] = this.booksService.list;
   booksList$: Observable<Book[]> = this.booksService.getAll();
-
-  //cat1Books: Book[] = this.booksService.getCategory(1, true).slice(0, 5);
-
 
   constructor(
     private booksService: BooksService,

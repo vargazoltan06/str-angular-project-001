@@ -1,15 +1,4 @@
-
 <h2 class=" offer text-center py-5 mb-0">Aktuális ajánlat - kiemelt könyvek</h2>
-
-<div class="offer w-100 container-fluid mx-auto card-deck d-flex flex-row">
-    <app-product-pager [books]="featuredBooks" class="col-12"></app-product-pager>
-</div>
-
-
-<h1 class="mt-5">Teljes kínálatunk</h1>
-
-
-
 
 <h1 class="text-center py-3">Kiemelt termékek</h1>
 <!-- <app-book-pager [books]="featuredBooks"></app-book-pager> -->
@@ -23,4 +12,3 @@
 <div class="py-3 d-flex justify-content-center">
     <app-book-pager [books]="booksList$ | async | randomiser | active:true | slicer:5"></app-book-pager>
 </div>
-
